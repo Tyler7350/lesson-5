@@ -5,10 +5,10 @@
     box-sizing:border-box;
 }
 
-.border{
+/*.border{
     border:1px solid black
     !important;
-}
+}*/ 
 .image-content > img{
     max-width: 200px;
 }
@@ -60,5 +60,15 @@
     }
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
         flex:1;
+    }
+}
+
+@media(max-width:480px) {
+    .row{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+        width: 100%;
     }
 }

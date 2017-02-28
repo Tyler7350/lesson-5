@@ -5,19 +5,25 @@ body {
 .image-content > img {
     max-width: 200px;
 }
-
-#header{
-    width:100%;
-    background-color: goldenrod;
-    margin-bottom:0;
-    text-align: center; 
-    position:relative;
-    transform: translateY(50%)
+.set {
+    /*  max-width: 960px;*/
 }
+#header{
+   
+    background-color: none;
+   min-height: 80px;
+}
+#header > h1 {
+   margin:0;
+    text-align: center;
+    font-family: 'Lato' sans-serif;
+     position: relative; transform: tanslateY(50%);
+    
+}
+
 
 #nav {
    margin:0; 
-    width: 100%;
     background-color: black;
     min-height: 80px;
     font-family: 'Lato' sans-serif;
@@ -26,58 +32,35 @@ body {
 
 #nav > ul{
   text-align: center;
-    transform: tanslateY(50%);
-    padding: 0;
+    padding: 15px 0 15px 0;
     margin: 0;  
 }
 
 #nav >ul >button {
-   min-width: 120px;
+   min-width: 178px;
     color: white;
     background-color: orange;
     border: none;
     padding: 15px 32px;
     transition: background-color .25s; 
-    
 }
-#nav >ul >button:hover {
-   background-color: brown; 
-    
+#nav >ul >button:hover { 
+   background-color: brown;
 }
-
-.menu {
-    display:flex;
-    background:red;
-    justify-content: space-around;
-    list-style-type: none;
-    margin:0;
-}
-#middle-wrapper-width {
- display: flex;  
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-#middle-wrapper {
- 
-}
-
 
 .side-by-side{
    display: flex 
     }
 
-
-
-
 #main-content-wrapper .image-content{
 text-align:center;
-    width:50%
+    margin: 0 auto;
         margin-top:50px;
   }
 .image-content >img {
         max-width: 200px;
     border-radius: 50%;
+    border: 2px black solid;
 }
 
 .image-content >h4 {
@@ -108,7 +91,7 @@ text-align:center;
     font-weight: 300;
     letter-spacing: 2px;
 }
-#main-content-wrapper #skilla span{
+#main-content-wrapper #skills span{
     text-align: center;
     font-weight: 400;
 }
@@ -117,8 +100,9 @@ text-align:center;
 
 #aside-content-wrapper {
   background-color: white;
-    width:35%
-        font-family:'Lato', sans-serif;    
+    font-family:'Lato', sans-serif; 
+    margin-top:50px;
+  }
 }
 #aside-right {
     margin: 0 50px 0 8px;
@@ -148,10 +132,11 @@ text-align:center;
     top:.9em;
     position:relative;
 }
-#favorite-sites {
+#favorite-sites > div{
     background-image: url(img/bg.jpeg);
     border-top: 5px blue solid;
     border-bottom: 5px black solid;
+    text-align: center;
 }
 #favorite-sites ul {
      list-style-type: none;
